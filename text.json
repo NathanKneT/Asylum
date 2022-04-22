@@ -1,0 +1,950 @@
+[
+  {
+    "id": 1,
+    "text": "Bonjour c'est bien les secours au bout du fil ?",
+    "options": [
+      {
+        "text": "Oui ! Que se passe-t'il ?",
+        "nextText": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Je viens tout juste de me réveiller dans une pièce étrange, je ne sais pas où je suis.",
+    "options": [
+      {
+        "text": "Décrivez moi l'endroit",
+        "nextText": 200
+      },
+      {
+        "text": "Pouvez-vous me raconter ce qu'il s'est passé avant votre réveil ?",
+        "nextText": 100
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "text": "C'est une petite chambre, on dirait une prison. La porte semble être fermée, mais je pourrai essayer de sortir par la fenêtre.",
+    "options": [
+      {
+        "text": "Cherchez une clé",
+        "nextText": 201
+      },
+      {
+        "text": "Essayez de passer par la fenêtre",
+        "nextText": 300
+      }
+    ]
+  },
+  {
+    "id": 236,
+    "text": "Je suis de retour dans la chambre. Je n'ai toujours que 2 options.",
+    "options": [
+      {
+        "text": "Cherchez une clé",
+        "nextText": 201
+      },
+      {
+        "text": "Essayez de passer par la fenêtre",
+        "nextText": 300
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "text": "Je rentrais du boulot puis je me suis assoupi lorsque je conduisais. Depuis peu, je dors très mal. Quand vous avez des insomnies, vous n'êtes jamais endormi ni éveillez, vous savez...",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 101
+      },
+      {
+        "text": "Excusez-moi, mais il serait mieux de réfléchir à ce qui pourrait vous sortir de là",
+        "nextText": 150
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "text": "Oui, excusez-moi, c'est que je ne sais pas vraiment quoi faire dans cette situation et vous êtes le seul numéro joignable.",
+    "options": [
+      {
+        "text": "Décrivez moi l'endroit",
+        "nextText": 200
+      },
+      {
+        "text": "Parlez-moi de vos insomnies",
+        "nextText": 101
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "text": "Mes insomnies sont apparues lorsque j'ai commencé à travailler sur CETTE étrange affaire *bruit stridant*",
+    "options": [
+      {
+        "text": "Parlez-moi de cette affaire",
+        "nextText": 9001
+      },
+      {
+        "text": "C'était quoi ce bruit ?",
+        "nextText": 140
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "text": "Vous l'avez entendu vous aussi ? Cet endroit ne me rassure pas du tout, il faut que je m'échappe ! La porte semble fermée, mais il y a une fenêtre par laquelle je pourrai passer.",
+    "options": [
+      {
+        "text": "Cherchez une clé",
+        "nextText": 201
+      },
+      {
+        "text": "Essayez de passer par la fenêtre",
+        "nextText": 300
+      }
+    ]
+  },
+  {
+    "id": 300,
+    "text": "En passant par la fenêtre, j'ai atterri sur un balcon. Je peux tenter de rejoindre la chambre à l'Est ou bien la chambre à l'Ouest.",
+    "options": [
+      {
+        "text": "Sautez vers l'Ouest",
+        "nextText": 301
+      },
+      {
+        "text": "Sautez vers l'Est",
+        "nextText": 8998
+      }
+    ]
+  },
+  {
+    "id": 301,
+    "text": "*bruit d'atterissage*",
+    "options": [
+      {
+        "text": "Rien de cassé ?",
+        "nextText": 302
+      }
+    ]
+  },
+  {
+    "id": 302,
+    "text": "Tout va bien, je vais essayer de casser la vitre pour rentrer.",
+    "options": [
+      {
+        "text": "Allez-y",
+        "nextText": 303
+      },
+      {
+        "text": "Attendez !",
+        "nextText": 501
+      }
+    ]
+  },
+  {
+    "id": 501,
+    "text": "C'est vrai que c'est dangereux, je pourrai me blesser et attirer l'attention.",
+    "options": [
+      {
+        "text": "Retournez dans la pièce précédente",
+        "nextText": 236
+      }
+    ]
+  },
+  {
+    "id": 303,
+    "text": "AH ! Je me suis blessé, le sang coule abondamment.",
+    "options": [
+      {
+        "text": "Cherchez un bandage",
+        "nextText": 304
+      },
+      {
+        "text": "Ouvrez la porte",
+        "nextText": 203
+      }
+    ]
+  },
+  {
+    "id": 304,
+    "text": "J'ai trouvé de quoi me soigner dans le tiroir ! Il y a également une arme qui a l'air chargée.",
+    "options": [
+      {
+        "text": "[Prendre l'arme]",
+        "nextText": 305
+      },
+      {
+        "text": "[Ne pas prendre l'arme]",
+        "nextText": 306
+      }
+    ]
+  },
+  {
+    "id": 305,
+    "text": "Maintenant, que je suis armé, je vais pouvoir me défendre !",
+    "options": [
+      {
+        "text": "[Sortir de la pièce]",
+        "nextText": 203
+      }
+    ]
+  },
+  {
+    "id": 306,
+    "text": "C'est mieux que je ne vole pas cette arme, on ne sait pas à quoi elle a pu servir !",
+    "options": [
+      {
+        "text": "[Sortir de la pièce]",
+        "nextText": 203
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "text": "Il y a une petite commode avec 2 tiroirs. Je commence par lequel ? ",
+    "options": [
+      {
+        "text": "Celui du haut",
+        "nextText": 2071
+      },
+      {
+        "text": "Celui du bas",
+        "nextText": 202
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "text": "En ouvrant le tiroir du bas, je trouve 2 clés : une rouge et une bleu",
+    "options": [
+      {
+        "text": "Prenez la clé rouge",
+        "nextText": 4000
+      },
+      {
+        "text": "Prenez la clé bleu",
+        "nextText": 4001
+      },
+      {
+        "text": "Prenez les 2 clés",
+        "nextText": 9202
+      }
+    ]
+  },
+  {
+    "id": 4000,
+    "text": "J'ai récupéré la clé rouge, on dirait qu'elle peut ouvrir la porte.",
+    "options": [
+      {
+        "text": "Utilisez la clé",
+        "nextText": 203
+      },
+      {
+        "text": "Prenez plutôt la clé bleue",
+        "nextText": 4001
+      }
+    ]
+  },
+  {
+    "id": 4001,
+    "text": "J'ai récupéré la clé bleue, on dirait qu'elle peut ouvrir la porte.",
+    "options": [
+      {
+        "text": "Utilisez la clé",
+        "nextText": 9003
+      },
+      {
+        "text": "Prenez plutôt la clé rouge",
+        "nextText": 4000
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "text": "La porte vient de s'ouvrir. Elle donne sur un couloir. Je ne sais pas de quel côté aller.",
+    "options": [
+      {
+        "text": "Allez à l'Est",
+        "nextText": 701
+      },
+      {
+        "text": "Allez à l'Ouest",
+        "nextText": 801
+      }
+    ]
+  },
+  {
+    "id": 701,
+    "text": "Je suis arrivé au bout du couloir, il n'y a qu'un escalier qui monte. J'ai la sensation d'être observé.",
+    "options": [
+      {
+        "text": "Prenez l'escalier",
+        "nextText": 702
+      },
+      {
+        "text": "Essayez d'aller plutôt à l'Ouest",
+        "nextText": 9004
+      }
+    ]
+  },
+  {
+    "id": 702,
+    "text": "Je viens de monter les escaliers, on dirait un vieux grenier. Il y a plein d'affaires en tout genre.",
+    "options": [
+      {
+        "text": "Fouillez les affaires",
+        "nextText": 703
+      },
+      {
+        "text": "Cherchez une issue",
+        "nextText": 908
+      }
+    ]
+  },
+  {
+    "id": 7021,
+    "text": "Je viens de monter les escaliers, on dirait un vieux grenier. Il y a plein d'affaires en tout genre.",
+    "options": [
+      {
+        "text": "Fouillez les affaires",
+        "nextText": 703
+      },
+      {
+        "text": "Cherchez une issue",
+        "nextText": 908
+      }
+    ]
+  },
+  {
+    "id": 908,
+    "text": "En longeant les murs, j'ai trouvé une trappe ! J'ai la sensation désagréable d'avoir quelqu'un derrière moi.",
+    "options": [
+      {
+        "text": "Passez par la trappe !",
+        "nextText": 909
+      },
+      {
+        "text": "Continuez à chercher une autre issue",
+        "nextText": 705
+      }
+    ]
+  },
+  {
+    "id": 909,
+    "text": "Aaaaaah ! C'était plus haut que je ne le pensais. Je me suis blessé. On dirait un placard pour ranger le linge sale.",
+    "options": [
+      {
+        "text": "Ouvrez la porte",
+        "nextText": 803
+      }
+    ]
+  },
+  {
+    "id": 703,
+    "text": "Il y a un talkie-walkie d'allumer ! Un léger bruit émane de l'appareil.",
+    "options": [
+      {
+        "text": "Tentez de communiquer",
+        "nextText": 704
+      },
+      {
+        "text": "Ignorez",
+        "nextText": 705
+      }
+    ]
+  },
+  {
+    "id": 705,
+    "text": "[Vous entendez un bruit, vous vous retournez et faite face à un être qui parait hostile.]",
+    "options": [
+      {
+        "text": "[Se défendre]",
+        "nextText": 420
+      }
+    ]
+  },
+  {
+    "id": 421,
+    "text": "[Vous avez pu vous défendre et vous avez abattu votre assaillant.]",
+    "options": [
+      {
+        "text": "[Fouiller son corps]",
+        "nextText": 422
+      }
+    ]
+  },
+  {
+    "id": 422,
+    "text": "[C'est un homme d'une trentaine d'année en regardant de plus près, vous vous rendez compte que ...]",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 423
+      }
+    ]
+  },
+  {
+    "id": 423,
+    "text": "[C'est vous. Vous faîtes face à votre cadavre qui jonche le sol]",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 424
+      }
+    ]
+  },
+  {
+    "id": 424,
+    "text": "[Vous sortez du grenier et vous parvenez à sortir de la maison.]",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 425
+      }
+    ]
+  },
+  {
+    "id": 425,
+    "text": "[Vous marchez des heures sans vous retourner en essayant d'oublier ce qu'il vient de se passer]",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 426
+      }
+    ]
+  },
+  {
+    "id": 426,
+    "text": "[Vous vous rendez compte qu'il n'y a jamais eu d'appel des urgences et que vous parliez seul depuis le début.]",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 427
+      }
+    ]
+  },
+  {
+    "id": 427,
+    "text": "[Vous avez obtenu la fin suivante : Doppelganger]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 704,
+    "text": "[Vous communiquez avec le garde-forestiers qui vous localise. Ils arrivent ! Vous avez obtenu la fin suivante : L'arrivée des secours]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 801,
+    "text": "En arrivant au bout du couloir, je fais face à un escalier qui descend et a un ascenseur, je fais quoi ? J'ai le sentiment qu'on me surveille.",
+    "options": [
+      {
+        "text": "Descendez les escaliers",
+        "nextText": 803
+      },
+      {
+        "text": "Prenez l'ascenseur",
+        "nextText": 1110
+      },
+      {
+        "text": "Revenez en arrière",
+        "nextText": 9004
+      }
+    ]
+  },
+  {
+    "id": 803,
+    "text": "Je suis arrivé dans une grande salle, il y a une épée à gauche de la pièce et une torche à droite. Je ressens toujours une présence lourde qui m'épie.",
+    "options": [
+      {
+        "text": "Prenez la torche",
+        "nextText": 804
+      },
+      {
+        "text": "Prenez l'épée",
+        "nextText": 850
+      }
+    ]
+  },
+  {
+    "id": 850,
+    "text": "[Après avoir ramassé l'épée, vous vous faites attaquer par un homme camouflé dans un tissu noir.] ",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 9005
+      }
+    ]
+  },
+  {
+    "id": 804,
+    "text": "[Après avoir ramassé la torche, vous vous faites attaquer par un homme camouflé dans un tissu noir.] ",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 805
+      }
+    ]
+  },
+  {
+    "id": 805,
+    "text": "[Vous l'attaquez avec la torche et le tissu commence à brûler. Vous réussissez à l'étourdir.] ",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 806
+      }
+    ]
+  },
+  {
+    "id": 806,
+    "text": "Il l'air étourdi, mais il n'hésitera pas à attaquer. Je fais quoi ? ",
+    "options": [
+      {
+        "text": "Finissez-le en ramassant l'épée",
+        "nextText": 9005
+      },
+      {
+        "text": "Ramassez la torche et prenez la fuite",
+        "nextText": 855
+      },
+      {
+        "text": "Prenez la fuite",
+        "nextText": 807
+      }
+    ]
+  },
+  {
+    "id": 807,
+    "text": "J'ai trouvé un autre escalier que j'ai descendu, je suis arrivé dans une salle sombre.",
+    "options": [
+      {
+        "text": "Continuez en longeant le mur droit",
+        "nextText": 808
+      },
+      {
+        "text": "Continuez en longeant le mur gauche",
+        "nextText": 9006
+      },
+      {
+        "text": "Revenez en arrière",
+        "nextText": 9007
+      }
+    ]
+  },
+  {
+    "id": 855,
+    "text": "J'ai trouvé un autre escalier que j'ai descendu, je suis arrivé dans une salle qui paraît piégée, il faut que je fasse attention !",
+    "options": [
+      {
+        "text": "Continuez en longeant le mur droit",
+        "nextText": 808
+      },
+      {
+        "text": "Revenez en arrière",
+        "nextText": 9007
+      }
+    ]
+  },
+  {
+    "id": 9006,
+    "text": "[Il y avait un piège le long du mur gauche. Vous auriez pu l'éviter grâce à la torche.]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 808,
+    "text": "Il y a une porte qui mène à la sortie. Je pourrai l'ouvrir s'il n'y avait pas ce verrou !",
+    "options": [
+      {
+        "text": "Tentez de casser le verrou",
+        "nextText": 809
+      },
+      {
+        "text": "Cherchez quelque chose pour casser le verrou",
+        "nextText": 860
+      },
+      {
+        "text": "Revenez en arrière",
+        "nextText": 9007
+      }
+    ]
+  },
+  {
+    "id": 812,
+    "text": "[Vous avez tiré sur le verrou et vous vous êtes échappé sain et sauf.]",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 813
+      }
+    ]
+  },
+  {
+    "id": 814,
+    "text": "[Vous avez détruit le verrou et vous vous êtes échappé sain et sauf.]",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 813
+      }
+    ]
+  },
+  {
+    "id": 817,
+    "text": "Je n'ai rien pour casser ce cadenas...",
+    "options": [
+      {
+        "text": "Cherchez quelque chose pour casser le verrou",
+        "nextText": 860
+      },
+      {
+        "text": "Revenez en arrière",
+        "nextText": 9007
+      }
+    ]
+  },
+  {
+    "id": 860,
+    "text": "En cherchant, j'ai trouvé un pied-de-biche qui pourrait faire l'affaire !",
+    "options": [
+      {
+        "text": "Cassez le verrou",
+        "nextText": 861
+      }
+    ]
+  },
+  {
+    "id": 870,
+    "text": "Je suis blessé, je n'ai pas la force nécessaire pour casser ce verrou...",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 871
+      }
+    ]
+  },
+  {
+    "id": 871,
+    "text": "Je n'ai plus aucune issue, je crois que c'est la fin.",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": 872
+      }
+    ]
+  },
+  {
+    "id": 872,
+    "text": "Merci de m'avoir accompagné, mais ils vont finir par m'avoir j'abandonne.",
+    "options": [
+      {
+        "text": "Non attendez !",
+        "nextText": 873
+      }
+    ]
+  },
+  {
+    "id": 873,
+    "text": "[Vous avez obtenu la fin suivante : Abandon].",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 813,
+    "text": "[Vous avec obtenu la fin suivante : La fuite ]",
+    "options": [
+      {
+        "text": "[Continuer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 9007,
+    "text": "[Vous avez été pris par surprise par la mystérieuse entité qui vous traquait.]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 1110,
+    "text": "Je viens de rentrer dans l'ascenseur ! Il y a 4 étages et on serait au 3ème apparemment.",
+    "options": [
+      {
+        "text": "Allez au 4ème",
+        "nextText": 7021
+      },
+      {
+        "text": "Allez au 2ème",
+        "nextText": 803
+      },
+      {
+        "text": "Tournez sur vous même",
+        "nextText": 8000
+      },
+      {
+        "text": "Revenez en arrière",
+        "nextText": 9004
+      }
+    ]
+  },
+  {
+    "id": 1111,
+    "text": "Je viens de rentrer dans l'ascenseur ! Il y a 4 étages et on serait au 3ème apparemment.",
+    "options": [
+      {
+        "text": "Allez au 4ème",
+        "nextText": 7021
+      },
+      {
+        "text": "Allez au 2ème",
+        "nextText": 803
+      },
+      {
+        "text": "Revenez en arrière",
+        "nextText": 9004
+      }
+    ]
+  },
+  {
+    "id": 2071,
+    "text": "Il y a une petite commode avec 2 tiroirs. Je commence par lequel ? ",
+    "options": [
+      {
+        "text": "[Vide]",
+        "nextText": 2072
+      },
+      {
+        "text": "Celui du bas",
+        "nextText": 202
+      }
+    ]
+  },
+  {
+    "id": 2072,
+    "text": "Il y a une petite commode avec 2 tiroirs. Je commence par lequel ? ",
+    "options": [
+      {
+        "text": "[Toujours vide]",
+        "nextText": 2073
+      },
+      {
+        "text": "Celui du bas",
+        "nextText": 202
+      }
+    ]
+  },
+  {
+    "id": 2073,
+    "text": "Il y a une petite commode avec 2 tiroirs. Je commence par lequel ? ",
+    "options": [
+      {
+        "text": "[Vous avez débloqué un ...]",
+        "nextText": 2074
+      },
+      {
+        "text": "Celui du bas",
+        "nextText": 202
+      }
+    ]
+  },
+  {
+    "id": 2074,
+    "text": "Il y a une petite commode avec 2 tiroirs. Je commence par lequel ? ",
+    "options": [
+      {
+        "text": "[Vous avez débloqué un tiroir vide :)]",
+        "nextText": 2074
+      },
+      {
+        "text": "Celui du bas",
+        "nextText": 202
+      }
+    ]
+  },
+  {
+    "id": 9202,
+    "text": "[Tu dois choisir, tu ne peux pas prendre les deux clés voyons !]",
+    "options": [
+      {
+        "text": "Prenez la clé rouge",
+        "nextText": 4000
+      },
+      {
+        "text": "Prenez la clé bleu",
+        "nextText": 4001
+      }
+    ]
+  },
+  {
+    "id": 8998,
+    "text": "*bruit d'atterissage*",
+    "options": [
+      {
+        "text": "Rien de cassé ?",
+        "nextText": 9015
+      }
+    ]
+  },
+  {
+    "id": 9015,
+    "text": "[Pas de réponse]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 9001,
+    "text": "Je travaille pour une compagnie d'assurance. J'ai dû me rendre sur les lieux d'un accident. La cause était inconnue, il n'y avait personne sur les lieux et la voiture était bonne pour la ca... *bruit stridant*.",
+    "options": [
+      {
+        "text": "Que se passe-t'il ?",
+        "nextText": 900103
+      }
+    ]
+  },
+  {
+    "id": 900103,
+    "text": "*Pas de réponse*",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      },
+      {
+        "text": "[Attendre]",
+        "nextText": 900104
+      }
+    ]
+  },
+  {
+    "id": 900104,
+    "text": "*Pas de réponse*",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      },
+      {
+        "text": "[Attendre...]",
+        "nextText": 900105
+      }
+    ]
+  },
+  {
+    "id": 900105,
+    "text": "*Pas de réponse*",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      },
+      {
+        "text": "[Attendre encore...]",
+        "nextText": 900106
+      }
+    ]
+  },
+  {
+    "id": 900106,
+    "text": "*Pas de réponse*",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      },
+      {
+        "text": "[⬅️Clique ici]",
+        "nextText": 900106
+      }
+    ]
+  },
+  {
+    "id": 9003,
+    "text": "[Vous avez utilisé la clé bleue, vous manquez de chance ! Celle-ci a déclenché un piège une fois inséré]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 9004,
+    "text": "[L'appel s'est coupé, il semblerait que l'interlocuteur fût observé de plus près qu'il ne le pensait.]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 9005,
+    "text": "[Ce n'était pas un homme, mais un spectre, il est insensible aux dégâts physique. Vous avez perdu la communication.]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 8000,
+    "text": "AAAAAAAAAAAAAAAH",
+    "options": [
+      {
+        "text": "[Retour]",
+        "nextText": 1111
+      }
+    ]
+  },
+  {
+    "id": 9011,
+    "text": "[Vous vous êtes fait attaquer et vous n'avez pu vous défendre.]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  },
+  {
+    "id": 9898,
+    "text": "[L'appel s'est interrompu, la batterie est morte.]",
+    "options": [
+      {
+        "text": "[Recommencer]",
+        "nextText": -1
+      }
+    ]
+  }
+]

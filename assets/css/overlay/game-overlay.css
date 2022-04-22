@@ -1,0 +1,88 @@
+.game-background {
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0px 0px calc(100vh/2) calc(100vw / 12) #000000;
+  background-color: rgba(0,0,0,0.25);
+  user-select: none;
+}
+
+#game_overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  font-family: 'Segoe UI Bold';
+  margin: 0;
+  padding: 0;
+}
+
+p.game-overlay {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI Bold';
+  color: rgba(222,194,132,0.5);
+  font-size: 150%;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgba(222,194,132);
+}
+
+h1.game-overlay {
+  font-family: 'Segoe UI Bold';
+  color: rgba(222,194,132,0.5);
+  font-size: 310%;
+  margin: 0;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgba(222,194,132);
+}
+
+.game-overlay-escape-message {
+  font-family: 'Segoe UI Bold';
+  color: rgba(222,137,132,0.5);
+  font-size: 125%;
+  margin: 0;
+  text-align: center;
+}
+
+.content-info {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.content-info .row-bottom {
+  flex: 1 1 auto;
+}
+
+.btn.game-overlay {
+  font-family: 'Segoe UI Regular';
+  color: #ffffff;
+  border-radius: 20px;
+  background: rgba(222,194,132,0.5);
+  border-width: 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn.game-overlay:hover {
+  cursor: crosshair;
+  background: rgba(222,137,132,0.5);
+  color: white;
+}
+
+#game_overlay {
+  animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
